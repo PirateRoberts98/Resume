@@ -1,0 +1,136 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{personalpic_beard}
+\name{Robert A.}{Conrad}
+\position{Computer Engineering{\enskip\cdotp\enskip} uOttawa Student}
+\address{356 Mishawashkode Street, Orleans, Ontario, Canada}
+
+\mobile{(+1) (819) 921-9698}
+\email{robert.conrad@ieee.org }
+% \homepage{www.robertconrad.me}
+\github{PirateRoberts98}
+\linkedin{PirateRoberts98}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world. Now!"}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Quantropi Hiring Team }
+  {Suite 620, 1600 Carling Ave , Ottawa, ON}
+% The date on the letter, default is the date of compilation
+%\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Coop Position }
+% How the letter is opened
+\letteropening{To Whom it May Concern}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Robert Andrew Conrad ~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+
+My name is Robert Andrew Conrad, I am a current student at the University of Ottawa current in my 4th year of my BASc in Computer Engineering with the Engineering Management, Entrepreneurship Option and COOP. I am a aspiring Engineer and programmer who throughout my degree continue to explore a variety of new and industry technology. When not in class I am a active student community member serving roles including: a founding member of the University of Ottawa's first MLH hackathon \textbf{uOttaHack} where i worked logistics for two years, the former treasurer and current chair of the \textbf{IEEE} uOttawa Student branch where I also served roles in local and international events, and I served a variety of development, R&D, business and community roles on the University of Ottawa former Robotics Club \textbf{Ottabotics}.
+
+I also have completed three coop development terms serving as a Mobile application developer for Software defined radio in Java and Kotlin, a embedded and application developer in C,C++,Bash and Python creating back end application and boot loader tools for a real time image processing company, and a back end software developer developing Go and Python projects for a distributed network management tool 
+
+%\lettersection{Why Q?}
+
+
+\lettersection{Why Me?}
+I am a passionate and hard working student who takes every opportunity to learn and apply myself. Alongside my passion of developing software projects, my enjoyment of business minded project development means I am able to look at problems from both a software and business perspective and design the ideal project for the requirements. I am also quite interested in Quantum technology for security and communication, attending conference talks at CUSEC 2018 in Montreal and Rising Stars 2020 in Las Vegas in part to see talks on vulnerabilities in Quantum communication and the current state of Quantum Computing in 2020. If selected I would use my time and efforts to assist the company to complete the unique solutions they can provide. 
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
